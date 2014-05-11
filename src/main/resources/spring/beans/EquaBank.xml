@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+">
+
+	<!-- Equa BAnk -->
+	<bean id="transactionDAO" class="com.slimiste.equa_bank.dao.TransactionDaoImpl"></bean>
+	<bean id="transactionManagerEB" class="com.slimiste.equa_bank.service.TransactionManagerEBImpl"></bean>
+	<bean id="partnerAccountDAO" class="com.slimiste.equa_bank.dao.PartnerAccountDaoImpl"></bean>
+	<bean id="partnerAccountManager" class="com.slimiste.equa_bank.service.PartnerAccountManagerImpl"></bean>
+	<bean id="clientAccountDAO" class="com.slimiste.equa_bank.dao.ClientAccountDaoImpl"></bean>
+	<bean id="clientAccountManager" class="com.slimiste.equa_bank.service.ClientAccountManagerImpl"></bean>
+
+	
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<bean id="transactionManager"
+	    class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+	    <property name="sessionFactory" ref="sessionFactoryEquaBank" />
+	</bean>
+</beans>

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import com.howtodoinjava.entity.EmployeeEntity;
@@ -12,6 +13,7 @@ import com.howtodoinjava.entity.EmployeeEntity;
 public class EmployeeDaoImpl implements EmployeeDAO  {
 
     @Autowired
+    @Qualifier(value="sessionFactoryHTDOJ")
     private SessionFactory sessionFactory;
 
     public void addEmployee(EmployeeEntity employee) {

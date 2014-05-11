@@ -6,5 +6,9 @@
 <hibernate-configuration>
     <session-factory>
         <mapping class="com.howtodoinjava.entity.EmployeeEntity" />
+        
+        <mapping class="com.slimiste.equa_bank.entity.TransactionEntity" />
+        <mapping class="com.slimiste.equa_bank.entity.PartnerAccountEntity" />
+        <mapping class="com.slimiste.equa_bank.entity.ClientAccountEntity" />
     </session-factory>
 </hibernate-configuration>

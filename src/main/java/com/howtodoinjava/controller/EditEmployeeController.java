@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.howtodoinjava.entity.EmployeeEntity;
 import com.howtodoinjava.service.EmployeeManager;
@@ -25,7 +24,7 @@ public class EditEmployeeController {
 		map.addAttribute("employee", new EmployeeEntity());
 		map.addAttribute("employeeList", employeeManager.getAllEmployees());
 		
-		return "editEmployeeList";
+		return "editEmployeeListView";
 	}
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST)
