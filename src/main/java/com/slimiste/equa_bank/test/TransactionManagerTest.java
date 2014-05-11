@@ -40,12 +40,12 @@ public class TransactionManagerTest {
 		
 		transaction.setAmount(56.8);
 		transaction.setBankRef("34434FFS");
-		transaction.setCategory("Živobytí");
+		transaction.setCategory("Zivobyti");
 		transaction.setCurrency("CZK");
 		transaction.setMovementType("Platba kartou");
 		transaction.setPersonalDescription("muj popis");
 		transaction.setPostingDate(Calendar.getInstance().getTime());
-		transaction.setPurposeOfPayment("zpráva pro příjemce");
+		transaction.setPurposeOfPayment("zprava pro prijemce");
 		transaction.setValueDate(Calendar.getInstance().getTime());
 		transaction.setVariableSymbol(1234567890);
 		this.transactionManagerEB.addTransaction(transaction);
@@ -55,7 +55,7 @@ public class TransactionManagerTest {
 		PartnerAccountEntity partnerAccountEntity = new PartnerAccountEntity();
 		partnerAccountEntity.setTransactionId(transactionId);
 		partnerAccountEntity.setAccountBankCode(324);
-		partnerAccountEntity.setAccountName("Já");
+		partnerAccountEntity.setAccountName("Ja");
 		partnerAccountEntity.setAccountBankCode(3300);
 		partnerAccountEntity.setAccountNumber("4654664599");
 		this.partnerAccountManager.add(partnerAccountEntity);
