@@ -1,4 +1,4 @@
-package com.slimiste.equa_bank.entity;
+package com.slimiste.equa_bank.database.entity;
 
 import java.util.Date;
 

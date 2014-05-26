@@ -2,13 +2,14 @@
 <!DOCTYPE hibernate-configuration PUBLIC
     "-//Hibernate/Hibernate Configuration DTD//EN"
     "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
- 
+
 <hibernate-configuration>
     <session-factory>
         <mapping class="com.howtodoinjava.entity.EmployeeEntity" />
-        
-        <mapping class="com.slimiste.equa_bank.entity.TransactionEntity" />
-        <mapping class="com.slimiste.equa_bank.entity.PartnerAccountEntity" />
-        <mapping class="com.slimiste.equa_bank.entity.ClientAccountEntity" />
+
+        <mapping class="com.slimiste.equa_bank.database.entity.TransactionEntity" />
+        <mapping class="com.slimiste.equa_bank.database.entity.PartnerAccountEntity" />
+        <mapping class="com.slimiste.equa_bank.database.entity.ClientAccountEntity" />
+        <mapping class="com.slimiste.equa_bank.database.entity.TransactionFromHtmlEntity" />
     </session-factory>
 </hibernate-configuration>

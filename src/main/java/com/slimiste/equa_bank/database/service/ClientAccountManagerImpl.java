@@ -1,4 +1,4 @@
-package com.slimiste.equa_bank.service;
+package com.slimiste.equa_bank.database.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.slimiste.equa_bank.dao.ClientAccountDAO;
-import com.slimiste.equa_bank.entity.ClientAccountEntity;
+import com.slimiste.equa_bank.database.dao.ClientAccountDAO;
+import com.slimiste.equa_bank.database.entity.ClientAccountEntity;
 
 @Service
 public class ClientAccountManagerImpl implements ClientAccountManager {

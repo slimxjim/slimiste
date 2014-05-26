@@ -1,9 +1,9 @@
-package com.slimiste.equa_bank.service;
+package com.slimiste.equa_bank.database.service;
 
 import java.util.List;
 
-import com.slimiste.equa_bank.entity.PartnerAccountEntity;
-import com.slimiste.equa_bank.entity.TransactionEntity;
+import com.slimiste.equa_bank.database.entity.PartnerAccountEntity;
+import com.slimiste.equa_bank.database.entity.TransactionEntity;
 
 public interface PartnerAccountManager 
 {

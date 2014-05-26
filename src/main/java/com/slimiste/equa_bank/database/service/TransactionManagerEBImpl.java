@@ -1,4 +1,4 @@
-package com.slimiste.equa_bank.service;
+package com.slimiste.equa_bank.database.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.slimiste.equa_bank.dao.TransactionDAO;
-import com.slimiste.equa_bank.entity.TransactionEntity;
+import com.slimiste.equa_bank.database.dao.TransactionDAO;
+import com.slimiste.equa_bank.database.entity.TransactionEntity;
 
 @Service
 public class TransactionManagerEBImpl implements TransactionManagerEB {

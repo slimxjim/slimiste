@@ -1,8 +1,8 @@
-package com.slimiste.equa_bank.dao;
+package com.slimiste.equa_bank.database.dao;
 
 import java.util.List;
 
-import com.slimiste.equa_bank.entity.ClientAccountEntity;
+import com.slimiste.equa_bank.database.entity.ClientAccountEntity;
 
 public interface ClientAccountDAO 
 {

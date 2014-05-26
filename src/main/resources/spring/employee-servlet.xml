@@ -15,11 +15,11 @@
         http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
- 
+
     <context:annotation-config />
-    <context:component-scan base-package="com.howtodoinjava.controller" />
+    <context:component-scan base-package="com.howtodoinjava" />
     <context:component-scan base-package="com.slimiste.equa_bank" />
- 
+
     <bean id="jspViewResolver"
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"
@@ -27,20 +27,20 @@
         <property name="prefix" value="/WEB-INF/view/" />
         <property name="suffix" value=".jsp" />
     </bean>
- 
+
     <bean id="messageSource"
         class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
         <property name="basename" value="classpath:properties/messages/messages" />
         <property name="defaultEncoding" value="UTF-8" />
     </bean>
-    
-    
-  <!-- Database Configuration -->
-	<import resource="database/DataSource.xml"/>
-	<import resource="database/Hibernate.xml"/>
 
-	<!-- Beans Declaration -->
-	<import resource="beans/HowToDoInJava.xml"/>
-	<import resource="beans/EquaBank.xml"/>
-    
+
+  <!-- Database Configuration -->
+  <import resource="database/DataSource.xml"/>
+  <import resource="database/Hibernate.xml"/>
+
+  <!-- Beans Declaration -->
+  <import resource="beans/HowToDoInJava.xml"/>
+  <import resource="beans/EquaBank.xml"/>
+
 </beans>

@@ -1,4 +1,4 @@
-package com.slimiste.equa_bank.dao;
+package com.slimiste.equa_bank.database.dao;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
-import com.slimiste.equa_bank.entity.ClientAccountEntity;
+import com.slimiste.equa_bank.database.entity.ClientAccountEntity;
 
 public class ClientAccountDaoImpl implements ClientAccountDAO {
 
