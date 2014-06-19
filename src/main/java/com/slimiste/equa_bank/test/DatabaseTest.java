@@ -86,8 +86,8 @@ public class DatabaseTest {
         this.transactionFromHtmlManager.addTransaction(transactionFromHtmlEntity);
 
         this.transactionManagerEB.deleteTransaction(transactionId);
-        this.partnerAccountManager.delete(transactionId);
-        this.clientAccountManager.delete(transactionId);
-        this.transactionFromHtmlManager.deleteTransaction(transactionId);
+        this.partnerAccountManager.delete(partnerAccountEntity.getId());
+        this.clientAccountManager.delete(clientAccountEntity.getId());
+        this.transactionFromHtmlManager.deleteTransaction(transactionFromHtmlEntity.getId());
     }
 }

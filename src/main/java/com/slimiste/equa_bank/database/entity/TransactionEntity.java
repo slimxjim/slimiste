@@ -13,6 +13,17 @@ import org.hibernate.annotations.Type;
 @Entity
 @Table(name="TRANSACTION")
 public class TransactionEntity {
+	public static final String ID 						= "ID";
+	public static final String VALUE_DATE 				= "VALUE_DATE";
+	public static final String POSTING_DATE 			= "POSTING_DATE";
+	public static final String AMOUNT 					= "AMOUNT";
+	public static final String CURRENCY 				= "CURRENCY";
+	public static final String MOVEMENT_TYPE 			= "MOVEMENT_TYPE";
+	public static final String PURPOSE_OF_PAYMENT 		= "PURPOSE_OF_PAYMENT";
+	public static final String CATEGORY 				= "CATEGORY";
+	public static final String BANK_REF 				= "BANK_REF";
+	public static final String VARIABLE_SYMBOL 			= "VARIABLE_SYMBOL";
+	public static final String PERSONAL_DESCRIPTION		= "PERSONAL_DESCRIPTION";
      /*
       CREATE TABLE TRANSACTION
 		(
@@ -33,40 +44,40 @@ public class TransactionEntity {
 		;
       */
     @Id
-    @Column(name="ID")
+    @Column(name=ID)
     @GeneratedValue
     private Integer id;
 
-    @Column(name="VALUE_DATE")
+    @Column(name=VALUE_DATE)
     @Type(type="date")
 	private Date valueDate;
     
-    @Column(name="POSTING_DATE")
+    @Column(name=POSTING_DATE)
     @Type(type="date")
     private Date postingDate;
     
-    @Column(name="AMOUNT")
+    @Column(name=AMOUNT)
     private Double amount;
     
-    @Column(name="CURRENCY")
+    @Column(name=CURRENCY)
     private String currency;
     
-    @Column(name="MOVEMENT_TYPE")
+    @Column(name=MOVEMENT_TYPE)
     private String movementType;
     
-    @Column(name="PURPOSE_OF_PAYMENT")
+    @Column(name=PURPOSE_OF_PAYMENT)
     private String purposeOfPayment;
     
-    @Column(name="CATEGORY")
+    @Column(name=CATEGORY)
     private String category;
     
-    @Column(name="BANK_REF")
+    @Column(name=BANK_REF)
     private String bankRef;
     
-    @Column(name="VARIABLE_SYMBOL")
+    @Column(name=VARIABLE_SYMBOL)
     private Integer variableSymbol;
     
-    @Column(name="PERSONAL_DESCRIPTION")
+    @Column(name=PERSONAL_DESCRIPTION)
     private String personalDescription;
 
 	public Integer getId() {
